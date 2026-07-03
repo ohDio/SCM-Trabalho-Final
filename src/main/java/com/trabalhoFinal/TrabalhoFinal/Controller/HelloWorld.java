@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorld {
 
-    @GetMapping("/oi")
+    @GetMapping("/myapp")
     public String dizerOi(@RequestParam(value = "nome", defaultValue = "Mundo") String nome) {
         return "Olá, " + nome + "!";
     }
